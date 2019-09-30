@@ -9,7 +9,7 @@
 
 clear;close all;clc
 
-cube_name = '33012';
+cube_name = '4097';
 
 dataPath    = 'T:\Box2\Drone Flight Data and Reference Files\Flight Data - All Sites\CLMB STND 2019 Flight Data\100084_2019_06_25_16_39_57\';
 

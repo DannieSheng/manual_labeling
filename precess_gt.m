@@ -8,9 +8,9 @@
 close all; clc
 dbstop if error
 
-thres = 0.6;
+thres = 0.35;
 
-dataPath    = 'T:\Box2\Drone Flight Data and Reference Files\Flight Data - All Sites\CLMB STND 2019 Flight Data\100085_2019_07_18_15_54_58\';
+dataPath    = 'T:\Box2\Drone Flight Data and Reference Files\Flight Data - All Sites\CLMB STND 2019 Flight Data\100084_2019_06_25_16_39_57\';
 
 hdrPath   = strrep(dataPath, 'T:\Box2\Drone Flight Data and Reference Files\Flight Data - All Sites', 'T:\AnalysisDroneData\ReadableHDR');
 hyperPath = strrep(hdrPath, 'ReadableHDR', 'MATdataCube');
@@ -37,7 +37,7 @@ list = list(idx);
 % idx_keep = setdiff(idx_all, idx_remove);
 % list = list(idx_keep);
 
-for iFile = 14:length(list)
+for iFile = 1:length(list)
     fileName          = list(iFile).name;
     % load ground truth
     load(fullfile(gtPath, fileName)) %gt
